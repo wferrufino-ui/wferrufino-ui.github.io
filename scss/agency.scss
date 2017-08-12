@@ -57,6 +57,14 @@ h1, h2, h3, h4, h5, h6 {
     background-color: $gray-lighter;
 }
 
+.bg-yellow {
+    background-color: $yellow;
+
+    h2, h3, p {
+        color: $gray-dark; 
+    }
+}
+
 .bg-darkest-gray {
     background-color: $gray-darker;
 }
@@ -250,12 +258,11 @@ section {
         margin-bottom: 15px;
     }
     h3.section-subheading {
-        font-size: 16px;
-        @include serif-font;
+        font-size: 17px;
+        font-weight: 500;
         text-transform: none;
-        font-style: italic;
-        font-weight: 400;
-        margin-bottom: 75px;
+        margin-bottom: 25px;
+        margin-top: 10px;
     }
 }
 
@@ -532,7 +539,7 @@ section {
 
 .team-member {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     img {
         margin: 0 auto;
         border: 7px solid white;

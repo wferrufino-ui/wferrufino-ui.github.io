@@ -8,9 +8,15 @@ var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 
+// Set the banner content
+var banner = ['/*!\n',
+    ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
+    ' * Copyright 2017-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
+    ' */\n',
+    ''
+].join('');
 
-
-// Compile SASS files from /scss into /css
+// Compile LESS files from /less into /css
 gulp.task('sass', function() {
     return gulp.src('scss/agency.scss')
         .pipe(sass())
@@ -87,7 +93,7 @@ gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js'], function() 
 });
 
 // Compiles SCSS files from /scss into /css
-// NOTE: This theme uses SASS by default. To swtich to SCSS you will need to update this gulpfile by changing the 'less' tasks to run 'sass'!
+// NOTE: This theme uses LESS by default. To swtich to SCSS you will need to update this gulpfile by changing the 'less' tasks to run 'sass'!
 gulp.task('sass', function() {
     return gulp.src('scss/agency.scss')
         .pipe(sass())
