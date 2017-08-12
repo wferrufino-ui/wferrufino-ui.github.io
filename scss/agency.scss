@@ -135,6 +135,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media(min-width:768px) {
+    .navbar{
+        height: 95px;
+    }
+
     .navbar-custom {
         background-color: transparent;
         padding: 25px 0;
@@ -186,10 +190,20 @@ header {
         }
         .intro-heading {
             @include heading-font;
-            font-weight: 700;
-            font-size: 50px;
-            line-height: 50px;
-            margin-bottom: 25px;
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 25px;
+            margin-bottom: 20px;
+
+                &.title {
+                    color:$theme-primary;
+                    font-size: 14px;
+                    background-color: $gray-base;
+                    display: inline-block;
+                    padding:5px 15px;
+                    font-weight: normal;
+                }
+
         }
     }
 }
@@ -202,16 +216,25 @@ header {
             .intro-lead-in {
                 @include serif-font;
                 font-style: italic;
-                font-size: 40px;
-                line-height: 40px;
-                margin-bottom: 25px;
+                font-size: 30px;
+                line-height: 35px;
+                margin-bottom: 15px;
             }
             .intro-heading {
                 @include heading-font;
                 font-weight: 700;
-                font-size: 75px;
-                line-height: 75px;
-                margin-bottom: 50px;
+                font-size: 50px;
+                line-height: 35px;
+                margin-bottom: 20px;
+
+                &.title {
+                    color:$theme-primary;
+                    font-size: 16px;
+                    background-color: $gray-base;
+                    display: inline-block;
+                    padding:5px 15px;
+                    font-weight: normal;
+                }
             }
         }
     }
@@ -220,9 +243,9 @@ header {
 // Global Section Styles
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
     h2.section-heading {
-        font-size: 40px;
+        font-size: 30px;
         margin-top: 0;
         margin-bottom: 15px;
     }
@@ -238,7 +261,7 @@ section {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 50px 0;
     }
 }
 
@@ -596,7 +619,8 @@ footer {
     }
     ul.quicklinks {
         margin-bottom: 0;
-        line-height: 40px;
+        line-height: 25px;
+        text-align: left;
         @include heading-font;
         text-transform: none;
     }
@@ -717,12 +741,12 @@ ul.social-buttons {
 
 ::-moz-selection {
     text-shadow: none;
-    background: $theme-primary;
+    background: $yellow;
 }
 
 ::selection {
     text-shadow: none;
-    background: $theme-primary;
+    background: $yellow;
 }
 
 img::selection {
@@ -734,5 +758,5 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: $theme-primary;
+    webkit-tap-highlight-color: $yellow;
 }
