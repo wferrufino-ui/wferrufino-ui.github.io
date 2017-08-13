@@ -46,10 +46,10 @@ h1, h2, h3, h4, h5, h6 {
 .bg-light-gray {
   background-color: #eeeeee; }
 
-.bg-yellow {
-  background-color: #ffd800; }
-  .bg-yellow h2, .bg-yellow h3, .bg-yellow p {
-    color: #333333; }
+.bg-pink {
+  background-color: #ef106d; }
+  .bg-pink h2, .bg-pink h3, .bg-pink p {
+    color: #FFF; }
 
 .bg-darkest-gray {
   background-color: #222222; }
@@ -266,7 +266,7 @@ header {
         font-weight: normal; } }
 
 section {
-  padding: 75px 0 0 0; }
+  padding: 75px 0 20px 0; }
   section h2.section-heading {
     font-size: 30px;
     margin-top: 0;
@@ -280,7 +280,7 @@ section {
 
 @media (min-width: 768px) {
   section {
-    padding: 75px 0 0 0; } }
+    padding: 75px 0 20px 0; } }
 
 .service-heading {
   margin: 15px 0;
