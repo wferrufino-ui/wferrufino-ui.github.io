@@ -89,6 +89,8 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 .navbar-custom {
+    height: 72px;
+
     background-color: $gray-darker;
     border-color: transparent;
     .navbar-brand {
@@ -144,9 +146,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(min-width:768px) {
     .navbar{
-        height: 95px;
+        height: 110px;
     }
-
+   
     .navbar-custom {
         background-color: transparent;
         padding: 25px 0;
@@ -167,8 +169,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Navbar Change on Scroll
+.navbar-brand>img {
+        width: 150px;
+    }
 
 @media(min-width:768px) {
+    .navbar-brand>img {
+        width: 250px;
+    }
+
     .navbar-custom.affix {
         background-color: $gray-darker;
         padding: 10px 0;
@@ -200,7 +209,7 @@ header {
             @include heading-font;
             font-weight: 600;
             font-size: 35px;
-            line-height: 25px;
+            line-height: 45px;
             margin-bottom: 20px;
 
                 &.title {
@@ -246,12 +255,14 @@ header {
             }
         }
     }
+
 }
 
 // Global Section Styles
 
 section {
-    padding: 50px 0;
+    padding: 75px 0 0 0;
+
     h2.section-heading {
         font-size: 30px;
         margin-top: 0;
@@ -268,7 +279,7 @@ section {
 
 @media(min-width:768px) {
     section {
-        padding: 50px 0;
+        padding: 75px 0 0 0;
     }
 }
 
