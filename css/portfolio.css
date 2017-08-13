@@ -46,9 +46,9 @@ h1, h2, h3, h4, h5, h6 {
 .bg-light-gray {
   background-color: #eeeeee; }
 
-.bg-pink {
-  background-color: #ef106d; }
-  .bg-pink h2, .bg-pink h3, .bg-pink p {
+.bg-dark {
+  background-color: #333333; }
+  .bg-dark h2, .bg-dark h3, .bg-dark p {
     color: #FFF; }
 
 .bg-darkest-gray {
@@ -272,11 +272,24 @@ section {
     margin-top: 0;
     margin-bottom: 15px; }
   section h3.section-subheading {
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 500;
     text-transform: none;
     margin-bottom: 25px;
     margin-top: 10px; }
+    section h3.section-subheading i {
+      color: #ef106d;
+      font-size: 40px;
+      padding: 0 14px 20px 0; }
+  section .college {
+    margin: 30px;
+    font-size: 12px; }
+    section .college span {
+      display: block;
+      line-height: 21px; }
+    section .college .box {
+      background-color: #eeeeee;
+      padding: 10px; }
 
 @media (min-width: 768px) {
   section {
@@ -332,7 +345,8 @@ section {
       font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-style: italic;
       font-size: 16px;
-      margin: 0; }
+      margin: 0;
+      color: #ef106d; }
 
 #portfolio * {
   z-index: 2; }
