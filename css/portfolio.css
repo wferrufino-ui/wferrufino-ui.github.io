@@ -137,9 +137,12 @@ h1, h2, h3, h4, h5, h6 {
     color: #DC415A;
     background-color: white; }
 
+.navbar-custom.affix {
+  background-color: #333333; }
+
 .navbar-custom {
   height: 72px;
-  background-color: #222222;
+  background-color: #333333;
   border-color: transparent; }
   .navbar-custom .navbar-brand {
     color: #DC415A;
@@ -177,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .navbar-nav {
-    background-color: #222; } }
+    background-color: #333333; } }
 
 @media (min-width: 768px) {
   .navbar {
@@ -206,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 215px;
     margin-top: -10px; }
   .navbar-custom.affix {
-    background-color: #222222;
+    background-color: #333333;
     padding: 10px 0; }
     .navbar-custom.affix .navbar-brand {
       font-size: 1.5em; } }
@@ -273,7 +276,7 @@ header {
 
 #skills .section-subheading.text-muted {
   font-family: 'Josefin Slab', serif;
-  font-size: 32px; }
+  font-size: 27px; }
 
 #skills img {
   width: 100%; }
@@ -292,8 +295,8 @@ section {
     margin-top: 10px; }
     section h3.section-subheading i {
       color: #DC415A;
-      font-size: 40px;
-      padding: 0 2px 20px 0; }
+      font-size: 30px;
+      padding: 0 2px 0 0; }
   section .college {
     margin: 30px;
     font-size: 12px; }

@@ -87,11 +87,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Custom Navigation Bar
+.navbar-custom.affix {
+    background-color: $gray-dark;
+}
 
 .navbar-custom {
     height: 72px;
 
-    background-color: $gray-darker;
+    background-color: $gray-dark;
     border-color: transparent;
     .navbar-brand {
         color: $theme-primary;
@@ -146,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(max-width:768px) {
     .navbar-nav { 
-        background-color:#222;
+        background-color:$gray-dark;
     }
 }
 @media(min-width:768px) {
@@ -187,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .navbar-custom.affix {
-        background-color: $gray-darker;
+        background-color: $gray-dark;
         padding: 10px 0;
         .navbar-brand {
             font-size: 1.5em;
@@ -270,7 +273,7 @@ header {
 #skills {
     .section-subheading.text-muted{
         font-family: 'Josefin Slab', serif;
-        font-size: 32px;
+        font-size: 27px;
     }
     img {
         width: 100%;
@@ -295,8 +298,8 @@ section {
 
         i {
             color: $theme-primary;
-            font-size: 40px;
-            padding: 0 2px 20px 0;
+            font-size: 30px;
+            padding: 0 2px 0 0;
         }
     }
 
