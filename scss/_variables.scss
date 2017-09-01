@@ -2,7 +2,15 @@
 
 // Gray and Brand Colors for use across theme
 
-$theme-primary:    #DC415A;
+$theme-primary:    #F05A28;
+
+@mixin bg-gradient(){
+ background: #F05A28;
+    background: -moz-linear-gradient(left,#F05A28 0%,#E80A89 100%);
+    background: -webkit-linear-gradient(left,#F05A28 0%,#E80A89 100%);
+    background: linear-gradient(to right,#F05A28 0%,#E80A89 100%);
+}
+
 $theme-danger:     #e74c3c;
 
 $gray-base:			#000 !default;

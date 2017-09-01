@@ -224,9 +224,9 @@ header {
             margin-bottom: 20px;
 
                 &.title {
-                    color:$theme-primary;
+                    color:$white;
                     font-size: 14px;
-                    background-color: $gray-base;
+                    @include bg-gradient();
                     display: inline-block;
                     padding:5px 15px;
                     font-weight: normal;
@@ -257,7 +257,7 @@ header {
                 margin-bottom: 20px;
 
                 &.title {
-                    color:$theme-primary;
+                    color:$white;
                     font-size: 16px;
                     background-color: $gray-base;
                     display: inline-block;
@@ -282,6 +282,23 @@ header {
 
 
 section {
+
+    .accentBlock {
+        background: #f0582b;
+        background: -moz-linear-gradient(left,#f0582b 0%,#e80d86 100%);
+        background: -webkit-linear-gradient(left,#f0582b 0%,#e80d86 100%);
+        background: linear-gradient(to right,#f0582b 0%,#e80d86 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0582b',endColorstr='#e80d86',GradientType=1 );
+        width: 76%;
+        height: 108px;
+        position: absolute;
+        left: 23px;
+        bottom: 2px;
+        right: 0;
+        top: 175px;
+        z-index: -1;
+    }
+
     padding: 75px 0 20px 0;
 
     h2.section-heading {
@@ -305,7 +322,12 @@ section {
 
     .college {
         margin:30px;
-        font-size: 12px;
+        font-size: 13px;
+
+        h5 {
+            margin-bottom: 5px;
+        }
+
         span {
             display: block;
             line-height: 21px
