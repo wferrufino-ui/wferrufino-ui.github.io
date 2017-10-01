@@ -244,10 +244,6 @@ header {
       header .intro-text .intro-heading.title {
         color: #FFF;
         font-size: 14px;
-        background: #F05A28;
-        background: -moz-linear-gradient(left, #F05A28 0%, #E80A89 100%);
-        background: -webkit-linear-gradient(left, #F05A28 0%, #E80A89 100%);
-        background: linear-gradient(to right, #F05A28 0%, #E80A89 100%);
         display: inline-block;
         padding: 5px 15px;
         font-weight: normal; }
