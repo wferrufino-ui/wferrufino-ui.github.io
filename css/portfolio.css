@@ -280,6 +280,13 @@ header {
 #skills img {
   width: 100%; }
 
+#skills ul li {
+  list-style: square; }
+
+#skills h4, #skills h5 {
+  color: #CA1F24;
+  font-weight: 500; }
+
 section {
   padding: 75px 0 20px 0; }
   section .accentBlock {

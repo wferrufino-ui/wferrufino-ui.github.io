@@ -278,6 +278,15 @@ header {
     img {
         width: 100%;
     }
+
+    ul li {
+        list-style: square;
+    }
+
+    h4, h5 {
+        color: #CA1F24;
+        font-weight: 500;
+    }
 }
 
 
