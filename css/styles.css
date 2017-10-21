@@ -2345,12 +2345,19 @@ header {
     border-color: rgba(255, 255, 255, 0.7); }
   header .collapse.show.charcoal {
     background-color: #4A4A4A; }
+  header a {
+    color: #FFFFFF;
+    text-decoration: none; }
+    header a:hover {
+      color: #FFFFFF;
+      text-decoration: underline; }
   header p {
     font-size: 14px; }
   header i {
     margin: 0 10px 0 0; }
   header li {
-    font-size: 14px; }
+    font-size: 14px;
+    margin-bottom: 10px; }
 
 .jumbotron h1 {
   font-weight: 300;
