@@ -20,6 +20,8 @@
 
     <!-- AngularJS -->
     <script src="js/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <!-- <script src="/node_modules/angular/angular.js"></script> -->
     <script src="js/custom-angular.js"></script>
   </head>
 
@@ -32,73 +34,16 @@
   <div ng-include="'jumbotron.html'"></div>  
 
 
-      <section>
-        
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-                <figure class="gallery blue">
-                  <img src="images/desktop/desktop-solarwinds.png" alt="" />
-                  <figcaption>
-                    <h2>Solar<span>winds</span></h2>
-                  </figcaption>
-                  <a href="swdc.html"></a>
-                </figure>
-            </div>
+  <div ng-view></div>
 
 
-            <div class="col-md-4">
-                 <figure class="gallery blue"><img src="images/desktop/desktop-shoptysons.png" />
-                  <figcaption>
-                    <h2>Shop<span> Tysons</span></h2>
-                  </figcaption>
-                  <a href="#"></a>
-                </figure>
 
-            </div> 
-            <div class="col-md-4">
-                 <figure class="gallery blue"><img src="images/desktop/desktop-macerich.png" />
-                  <figcaption>
-                    <h2>Macerich <span> Tourism</span></h2>
-                  </figcaption>
-                  <a href="#"></a>
-                </figure>
-            </div> 
-           
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="row">
-             <div class="col-md-4">
-               <figure class="gallery blue"><img src="images/desktop/desktop-ice.png" />
-                  <figcaption>
-                    <h2>ICE <span>.Gov</span></h2>
-                  </figcaption>
-                  <a href="#"></a>
-                </figure>
-            </div> 
-            <div class="col-md-4">
-              <figure class="gallery blue"><img src="images/desktop/desktop-fdic.png" />
-                  <figcaption>
-                    <h2>FDIC <span>.Gov</span></h2>
-                  </figcaption>
-                  <a href="#"></a>
-                </figure>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <div ng-include="'footer.html'"></div>
+  <div ng-include="'footer.html'"></div>
 
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
-
   </body>
-
 </html>
