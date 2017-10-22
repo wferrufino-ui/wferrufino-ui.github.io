@@ -5,6 +5,7 @@
  */
 /* FONT PATH
  * -------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 @font-face {
   font-family: 'FontAwesome';
   src: url("../node_modules/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -2343,6 +2344,10 @@ header {
   header .navbar-dark .navbar-toggler {
     cursor: pointer;
     border-color: rgba(255, 255, 255, 0.7); }
+  header img {
+    border: 1px solid #AAA;
+    padding: 3px;
+    margin: 0 3px; }
   header .collapse.show.charcoal {
     background-color: #4A4A4A; }
   header a {
@@ -2359,9 +2364,11 @@ header {
     font-size: 14px;
     margin-bottom: 10px; }
 
-.jumbotron h1 {
-  font-weight: 300;
-  color: #37B2F1; }
+.jumbotron {
+  padding: 10px 0; }
+  .jumbotron h1 {
+    font-weight: 300;
+    color: #37B2F1; }
 
 footer {
   font-weight: 300;
@@ -2539,3 +2546,88 @@ footer {
     transform: scale(2.5);
     filter: alpha(opacity=0);
     opacity: 0; } }
+
+figure.gallery {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  max-height: 220px;
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
+  figure.gallery:before {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    background: #ffffff;
+    position: absolute;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: rotate(110deg) translateY(-50%);
+    transform: rotate(110deg) translateY(-50%); }
+  figure.gallery * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+  figure.gallery img {
+    max-width: 100%;
+    position: relative;
+    opacity: 0.4; }
+  figure.gallery figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+  figure.gallery h2 {
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    display: inline-block;
+    background: #000000;
+    -webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+    transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+    padding: 12px 5px;
+    margin: 0;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 22px; }
+    figure.gallery h2 span {
+      font-weight: 800; }
+  figure.gallery a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1; }
+  figure.gallery.blue {
+    background: #123851; }
+    figure.gallery.blue h2 {
+      background: #0a212f; }
+
+figure.gallery:hover img,
+figure.gallery.hover img {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+figure.gallery:hover h2,
+figure.gallery.hover h2 {
+  -webkit-transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+  transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%); }
+
+figure.gallery:hover:before,
+figure.gallery.hover:before {
+  -webkit-transform: rotate(110deg) translateY(-150%);
+  transform: rotate(110deg) translateY(-150%); }
