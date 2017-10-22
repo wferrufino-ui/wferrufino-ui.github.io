@@ -18,57 +18,21 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Sanchez" rel="stylesheet">
 
+    <!-- AngularJS -->
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="js/custom-angular.js"></script>
   </head>
 
-  <body>
+  <body ng-app="app">
 
- <header>
-      <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-7 py-5">
-              <h4 class="text-white">About</h4>
-              <img src="images/will.jpg" class="pull-right img-responsive img-circle" style="width: 105px;">
-              <p>For the last 4 years, I've been working as a UI/UX Front End Web Developer at Solarwinds. Previously worked at several agencies design/developing websites for businesses and organizations. I also worked on government projects with Hewlett-Packard, and L-3 Communications For Both FDIC and Department of Homeland Security.</p>
-              <p> I love every aspects of designing websites, from identifying problems to prototyping solutions: wireframing, designing mockups, building prototypes, and developing products.</p>
+  <!--  Header -->
+  <div ng-include="'header.html'"></div>
 
-            </div>
-            <div class="col-sm-5 py-5">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled">
-                <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:williamferrufino@yahoo.com">williamferrufino@yahoo.com</a></li>
-                <li><i class="fa fa-phone" aria-hidden="true"></i> Phone (571) 201-1574</li>
-                <li><i class="fa fa-linkedin" aria-hidden="true"></i> https://www.linkedin.com/in/williamferrufino</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="navbar navbar-dark">
-        <div class="container d-flex justify-content-between">
-          <a href="/" class="navbar-brand">William Ferrufino</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-    </header>
-
-      <section class="jumbotron text-center">
-        <div class="container">
-         <div class="load">
-            <img src="images/logo.png">
-         </div> 
-          <h1>William Ferrufino</h1>
-          <p class="lead text-muted">UI/UX Web Design & Developer</p>    
-        </div>
-      </section>
-
+  <!-- JumboTron Section -->
+  <div ng-include="'jumbotron.html'"></div>  
 
 
       <section>
-
-        <div id="app"></div>
         
         <div class="container">
           <div class="row">
@@ -127,11 +91,8 @@
 
       </section>
 
-    <footer class="text-muted">
-      <div class="container">
-        <p>2017 &copy; <span class="name">William Ferrufino<span></p>
-      </div>
-    </footer>
+      <div ng-include="'footer.html'"></div>
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
