@@ -2612,9 +2612,9 @@ figure.gallery {
     position: absolute;
     z-index: 1; }
   figure.gallery.blue {
-    background: #123851; }
+    background: #333; }
     figure.gallery.blue h2 {
-      background: #0a212f; }
+      background: #222222; }
 
 figure.gallery:hover img,
 figure.gallery.hover img {
